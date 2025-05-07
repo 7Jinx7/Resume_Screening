@@ -14,7 +14,7 @@ The dataset used is from Kaggle: [Resume Dataset](https://www.kaggle.com/dataset
 
 - `model1_RB.ipynb` – Uses a simple keyword threshold to label candidates.
 - `model2_Z-Score.ipynb` – Uses a statistical Z-score approach for more adaptive labeling.
-- Please also download the cleaned_dataset.csv and the keywords.csv before running the ipynb notebooks.
+- Please also download the `cleaned_dataset.csv` and the `keywords.csv` before running the ipynb notebooks.
 
 ---
 
