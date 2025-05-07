@@ -1,6 +1,8 @@
 
 # Resume Screening Project
 
+**The goal of this project was to use natural language processing and data analytics (like Z-score analysis) to automatically screen resumes and identify top candidates from a large dataset.**
+
 This project demonstrates two approaches to automate resume screening using NLP and machine learning. Both notebooks classify resumes as either:
 
 - "Fit – Move forward with interview"
@@ -78,6 +80,12 @@ nltk.download('stopwords')
 - A resume is labeled `"Fit"` if its z-score is ≥ 0.5
 - This method adapts based on the distribution of scores across the dataset
 - Histogram of Z-scores is plotted to visualize threshold impact
+
+- The Z-score was computed by taking each resume's keyword match count, subtracting the average keyword count across all resumes, and dividing by the standard deviation.
+
+  - Mathematically: Z = (KeywordScore - MeanKeywordScore) / StandardDeviation
+  - This tells us how far a resume’s keyword count is from the average, in units of standard deviation, helping us identify resumes that         stand out.
+
 - We chose a Z-score threshold of 0.5 to select resumes that have keyword scores at least half a standard deviation above the mean, indicating above-average relevance without being overly restrictive.
 
 ---
@@ -88,7 +96,7 @@ Each notebook:
 - Trains and evaluates a logistic regression model
 - Prints classification metrics (precision, recall, f1-score)
 - Displays each resume’s final decision
-- Optionally saves results to CSV
+- Saves results to CSV
 
 ---
 
