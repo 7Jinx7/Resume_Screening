@@ -2,7 +2,7 @@
 # Resume Screening Project
 
 
-This project demonstrates two approaches to automate resume screening using NLP and machine learning. Both notebooks classify resumes as either:
+Our project demonstrates two approaches to automate resume screening using NLP and machine learning. Both notebooks classify resumes as either:
 
 - "Fit – Move forward with interview"
 - "Not a good fit"
