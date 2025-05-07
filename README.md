@@ -1,7 +1,7 @@
 
 # Resume Screening Project
 
-**The goal of this project was to use natural language processing and data analytics (like Z-score analysis) to automatically screen resumes and identify top candidates from a large dataset.**
+**The goal of ourt project was to use natural language processing and data analytics (Z-score analysis) to automatically screen resumes and identify top candidates from a large dataset.**
 
 This project demonstrates two approaches to automate resume screening using NLP and machine learning. Both notebooks classify resumes as either:
 
