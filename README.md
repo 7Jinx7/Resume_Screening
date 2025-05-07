@@ -24,11 +24,20 @@ The dataset used is from Kaggle: [Resume Dataset](https://www.kaggle.com/dataset
 - Strips HTML tags, punctuation, numbers
 - Converts text to lowercase
 - Removes stopwords using NLTK
+- THIS IS ALREADY DONE FOR YOU AND SAVED IN `cleaned_dataset.csv`
 
 ### 2. Keyword Scoring
 - Uses a list of relevant data science keywords from `keywords.csv`
 - For each resume, counts how many keywords are present (`KeywordScore`)
 
+---
+
+## What to run
+
+- If you are looking to hire more people (e.g: needs of a small start-up), we recommend you try the model1_RB.ipynb notebook.
+- If you ate looking to hire few people (e.g: interns for a big company), we recommend you try the model2_Z-Score.ipynb notebook.
+- If you are an instructor or a grader, we recommend you run both!
+- More information on the models below. 
 ---
 
 ## Method 1: Rule-Based Threshold
