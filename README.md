@@ -36,14 +36,16 @@ nltk.download('stopwords')
 ## Part 1 of project: Setup
 
 ### 1. Data Cleaning
-- Strips HTML tags, punctuation, numbers
-- Converts text to lowercase
-- Removes stopwords using NLTK
-- THIS IS ALREADY DONE FOR YOU AND SAVED IN `cleaned_dataset.csv`
+- Original dataset is from Kaggle
+- Strip HTML tags, punctuation, numbers
+- Convert alll text to lowercase
+- Remove stopwords using NLTK
+- COMPLETED: THIS IS ALREADY DONE AND SAVED IN `cleaned_dataset.csv`
 
 ### 2. Keyword Scoring
 - Uses a list of relevant data science keywords from `keywords.csv`
 - For each resume, counts how many keywords are present (`KeywordScore`)
+- COMPLETED: THIS IS ALREADY DONE AND SAVED IN `keywords.csv`
 
 ---
 
@@ -51,7 +53,7 @@ nltk.download('stopwords')
 
 - If you are looking to hire more people (e.g: needs of a small start-up), we recommend you try the model1_RB.ipynb notebook.
 - If you ate looking to hire few people (e.g: interns for a big company), we recommend you try the model2_Z-Score.ipynb notebook.
-- If you are an instructor or a grader, we recommend you run both!
+- **If you are an instructor or a grader, we recommend you run both!**
 - More information on the models below. 
 ---
 
@@ -66,6 +68,7 @@ nltk.download('stopwords')
 ### Model
 - Text vectorized using `CountVectorizer`
 - Logistic Regression is trained to classify based on cleaned text
+- We picked a threshold of 3 keywords in the rule-based method as a simple heuristic to identify candidates with basic relevant skills, though this number can be easily customized based on job requirements.
 
 ---
 
