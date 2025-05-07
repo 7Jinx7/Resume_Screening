@@ -7,7 +7,7 @@ This project demonstrates two approaches to automate resume screening using NLP 
 - "Fit – Move forward with interview"
 - "Not a good fit"
 
-- **The goal of ourt project was to use natural language processing and data analytics (Z-score analysis) to automatically screen resumes and identify top candidates from a large dataset.**
+The goal of ourt project was to use natural language processing and data analytics (Z-score analysis) to automatically screen resumes and identify top candidates from a large dataset.
   
 The dataset used is from Kaggle: [Resume Dataset](https://www.kaggle.com/datasets/gauravduttakiit/resume-dataset)
 
