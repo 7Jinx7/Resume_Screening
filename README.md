@@ -101,5 +101,5 @@ Make sure the following files are in the same directory:
 ---
 
 ## Author
-Developed as part of a data science firm simulation for academic purposes by Sanjana Suresh (primary) and Nimisha Pant.
+Developed as part of a data science classd for academic purposes by Sanjana Suresh (primary) and Nimisha Pant.
 
