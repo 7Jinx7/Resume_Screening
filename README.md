@@ -10,6 +10,21 @@ The dataset used is from Kaggle: [Resume Dataset](https://www.kaggle.com/dataset
 
 ---
 
+## Requirements
+
+Make sure to install required libraries:
+```bash
+pip install pandas numpy scikit-learn nltk matplotlib
+```
+
+Also, download NLTK stopwords:
+```python
+import nltk
+nltk.download('stopwords')
+```
+
+---
+
 ## Files Included
 
 - `model1_RB.ipynb` – Uses a simple keyword threshold to label candidates.
@@ -18,7 +33,7 @@ The dataset used is from Kaggle: [Resume Dataset](https://www.kaggle.com/dataset
 
 ---
 
-## How It Works
+## Part 1 of project: Setup
 
 ### 1. Data Cleaning
 - Strips HTML tags, punctuation, numbers
@@ -40,6 +55,8 @@ The dataset used is from Kaggle: [Resume Dataset](https://www.kaggle.com/dataset
 - More information on the models below. 
 ---
 
+## Part 2 of project: Model building and training
+
 ## Method 1: Rule-Based Threshold
 
 - Any resume with 3 or more keyword matches is labeled as `"Fit"`.
@@ -58,21 +75,7 @@ The dataset used is from Kaggle: [Resume Dataset](https://www.kaggle.com/dataset
 - A resume is labeled `"Fit"` if its z-score is ≥ 0.5
 - This method adapts based on the distribution of scores across the dataset
 - Histogram of Z-scores is plotted to visualize threshold impact
-
----
-
-## Requirements
-
-Make sure to install required libraries:
-```bash
-pip install pandas numpy scikit-learn nltk matplotlib
-```
-
-Also, download NLTK stopwords:
-```python
-import nltk
-nltk.download('stopwords')
-```
+- We chose a Z-score threshold of 0.5 to select resumes that have keyword scores at least half a standard deviation above the mean, indicating above-average relevance without being overly restrictive.
 
 ---
 
