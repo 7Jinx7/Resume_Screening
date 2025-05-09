@@ -41,7 +41,7 @@ nltk.download('stopwords')
 ### 1. Data Cleaning
 - Original dataset is from Kaggle
 - Strip HTML tags, punctuation, numbers
-- Convert alll text to lowercase
+- Standardize alll text styles
 - Remove stopwords using NLTK
 - COMPLETED: THIS IS ALREADY DONE AND SAVED IN `cleaned_dataset.csv`
 
